@@ -1,0 +1,20 @@
+http://localhost:5000/api/deleteinventory
+Body:
+{
+ "_id": "64383a074f7003487ec66be3"
+}
+
+http://localhost:5000/api/updateinventory
+[
+  {
+     "_id": "64383a074f7003487ec66be3",
+      "Name": "ADi"
+
+  }
+]
+
+http://localhost:5000/api/getinventory
+
+
+http://localhost:5000/api/addinventory
+[{"Name":"Ankit","Category":"test","Brand":"test","Description":"test","Quantity":1,"Price":1,"Status":"test","user":"test"}]

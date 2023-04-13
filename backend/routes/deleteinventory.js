@@ -1,6 +1,6 @@
 const Inventory = require("../models/Inventory")
-// import connectDb from "../middleware/mongoose"
 const connectDb = require("../middleware/mongoose")
+
 const handler = async (req, res) => {
     if(req.method=='DELETE'){
         let p=await Inventory.deleteOne({_id:req.body._id})

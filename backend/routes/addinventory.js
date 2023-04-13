@@ -1,7 +1,7 @@
 
 const Inventory = require("../models/Inventory")
-// import connectDb from "../middleware/mongoose"
 const connectDb = require("../middleware/mongoose")
+
 const handler = async (req, res) => {
     console.log("Hello")
     
@@ -28,7 +28,7 @@ const handler = async (req, res) => {
         res.status(400).json({ error: "Invalid request method" })
     }
     
-    // res.status(200).json({ products })
+    
 }
 
 module.exports = connectDb(handler)
