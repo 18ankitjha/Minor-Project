@@ -16,7 +16,7 @@ const RootStyle = styled("div")({
   
   const ContentStyle = styled("div")({
     maxWidth: 480,
-    padding: 25,
+    padding: 5,
     margin: "auto",
     display: "flex",
     justifyContent: "center",

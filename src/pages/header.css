@@ -1,0 +1,36 @@
+.container-top{
+    color: rgb(210, 22, 22);
+    background-color: #003A6A;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border-color: black;
+
+}
+.logo{
+   padding-top: 15px;
+}
+
+.login_text_container{
+    background-color: #222;
+    border-color: #080808;
+    width: 100%;
+    color: white;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.login_text{
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:#F7DC6F; 
+    font-family:Trebuchet MS; 
+    font-size:22px;
+    margin-left: 46px;
+}

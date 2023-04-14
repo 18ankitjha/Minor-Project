@@ -5,18 +5,28 @@ import SocialAuth from "../components/SocialAuth";
 import Logo from "../components/Logo";
 import { motion } from "framer-motion";
 import {fadeInUp,RootStyle,HeadingStyle,easing,ContentStyle} from './Login_style.js';
+import classes from "./header.css";
+import logo from "./logo.png";
 
 const Login = ({ setAuth }) => {
   return (
     <RootStyle >
+      <div className="container-top" >
+        <div>
+          <img src={logo} alt="logo" className={classes.logo} />
+        </div>
+      </div>
+      <Typography className="login_text_container">
+             <div className="login_text">
+            | Mess Inventory System |
+             </div>
+            </Typography>
+
       <Container maxWidth="sm" >
         <ContentStyle>
-          <HeadingStyle component={motion.div} {...fadeInUp}>
+          {/* <HeadingStyle component={motion.div} {...fadeInUp}>
             <Logo />
-            <Typography sx={{ color: "text.secondary", mb: 5 }}>
-              Login to your account
-            </Typography>
-          </HeadingStyle>
+          </HeadingStyle> */}
 
           <Box component={motion.div} {...fadeInUp}>
             <SocialAuth />
